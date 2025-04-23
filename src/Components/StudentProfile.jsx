@@ -24,6 +24,10 @@ function StudentProfile() {
           <button
             onClick={() => setLiked(!liked)}
             style={{
+              textAlign:"center",
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
               fontSize: "24px",
               color: liked ? "red" : "gray",
               background: "none",

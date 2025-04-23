@@ -30,7 +30,7 @@ function MultiInputForm() {
     <div style={{ maxWidth: "400px", margin: "50px auto", fontFamily: "sans-serif" }}>
       <h2 style={{ textAlign: "center" }}>User Info Form</h2>
 
-      <form  style={{ display: "flex", flexDirection: "column", gap: "20px" }}>   { /*onSubmit={handleSubmit} */}
+      <form  onSubmit={handleSubmit} style={{ display: "flex", flexDirection: "column", gap: "20px" }}>   
         <input
           type="text"
           name="name"
@@ -50,7 +50,7 @@ function MultiInputForm() {
         />
 
         <button
-          onClick={handleSubmit}
+          
           style={{
             padding: "12px",
             backgroundColor: "#4CAF50",

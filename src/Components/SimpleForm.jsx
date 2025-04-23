@@ -6,14 +6,14 @@ function SimpleForm() {
   const handleChange = (e) => {
  
     setName(e.target.value);
-    // console.log(e);
+    console.log(e.target.value);
     // console.log(e.target.value); 
 
 
   };
   const handleSubmit = (e) => {
     e.preventDefault();
-    // console.log(name);
+    console.log(name);
     alert(`Hello, ${name}!`);
     // console.log(`Hello, ${name}!`);
   };
@@ -23,7 +23,7 @@ function SimpleForm() {
       <h1>Welcome Form</h1>
 
 
-      <form onSubmit={handleSubmit}>
+      <form  onSubmit={handleSubmit}>{/* onSubmit={handleSubmit} */}
         <input
           type="text"
           placeholder="Enter your name"

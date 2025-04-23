@@ -4,6 +4,11 @@ import 'tailwindcss/index.css';
 import StudentProfile from './Components/StudentProfile';
 import SimpleForm from './Components/SimpleForm';
 import MultiInputForm from './Components/MultiInputForm';
+import MyForm from './Components/MyForm';
+import ShowPassword from './Components/ShowPassword';
+import ShowMore from './Components/ShowMore';
+import StyledForm from './Components/StyledForm ';
+import ReadMore from './Components/ReadMore';
 // import { Swiper } from 'swiper/types';
 // import { SwiperSlide } from 'swiper/react';
 // import Product from './Components/Product';
@@ -13,7 +18,7 @@ import MultiInputForm from './Components/MultiInputForm';
 function App() {
 
   // const [a , b ] = useState(0);
-  const [a , b ] = useState(true);
+  // const [a , b ] = useState(true);
 
   // const [count, setCount] = useState(21);
   // const [a , b] =  useState(true);
@@ -36,10 +41,15 @@ function App() {
 
   return (
     <>
-    <MultiInputForm />
     {/* <SimpleForm /> */}
+    {/* <MultiInputForm /> */}
   {/* <StudentProfile /> */}
-    <div className="w-full h-screen  text-center bg-zinc-900 text-white text-3xl p-25">
+  {/* <ShowPassword /> */}
+  {/* <ShowMore /> */}
+  {/* <MyForm /> */}
+  {/* <StyledForm /> */}
+  <ReadMore />
+    <div className="">
 
       {/* <h1 className={`${a ? "text-white-500 border-2 border-red-500 py-25" : "text-green-500"}`}>{a ? "Hello" : "Hey"}</h1> */}
 

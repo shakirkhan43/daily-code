@@ -1,0 +1,32 @@
+.read-more-container {
+    max-width: 500px;
+    margin: 30px auto;
+    padding: 20px;
+    background: #f1f1f1;
+    border-radius: 10px;
+    font-family: 'Segoe UI', sans-serif;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .read-more-container p {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 10px;
+    line-height: 1.5;
+  }
+  
+  .read-more-container button {
+    background-color: #0077ff;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background 0.3s;
+  }
+  
+  .read-more-container button:hover {
+    background-color: #005fcc;
+  }
+  
