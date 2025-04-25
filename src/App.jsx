@@ -9,11 +9,17 @@ import ShowPassword from './Components/ShowPassword';
 import ShowMore from './Components/ShowMore';
 import StyledForm from './Components/StyledForm ';
 import ReadMore from './Components/ReadMore';
+import PasswordAllow from './Components/PasswordAllow';
+// import UseEffect from './Components/UseEffect';
+// import Counter from './Components/Counter';
+import DarkLight from './Components/DarkLight';
+import Effect from './Hooks/Effect';
 // import { Swiper } from 'swiper/types';
 // import { SwiperSlide } from 'swiper/react';
 // import Product from './Components/Product';
 
-
+import CountEffect from './Hooks/CountEffect';
+import Counter from './Hooks/Counter';
 
 function App() {
 
@@ -41,6 +47,10 @@ function App() {
 
   return (
     <>
+    {/* <Effect /> */}
+    {/* <CountEffect /> */}
+    <Counter />
+    {/* <DarkLight /> */}
     {/* <SimpleForm /> */}
     {/* <MultiInputForm /> */}
   {/* <StudentProfile /> */}
@@ -48,7 +58,10 @@ function App() {
   {/* <ShowMore /> */}
   {/* <MyForm /> */}
   {/* <StyledForm /> */}
-  <ReadMore />
+  {/* <ReadMore /> */}
+  {/* <Counter /> */}
+  {/* <PasswordAllow /> */}
+  {/* <UseEffect /> */}
     <div className="">
 
       {/* <h1 className={`${a ? "text-white-500 border-2 border-red-500 py-25" : "text-green-500"}`}>{a ? "Hello" : "Hey"}</h1> */}
