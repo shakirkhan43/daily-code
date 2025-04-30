@@ -1,14 +1,10 @@
-
-
 import { useState } from 'react';
-
 function DarkLight() {
   const [darkMode, setDarkMode] = useState(false);
 
   const toggleMode = () => {
     setDarkMode(!darkMode);
   };
-
   return (
     <div
       style={{

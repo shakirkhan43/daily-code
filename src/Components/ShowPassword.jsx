@@ -3,6 +3,9 @@ import React, { useState } from "react";
 
 const ShowPassword = () => {
   const [show, setShow] = useState(false);
+  const toggleShow = () => {
+    setShow(!show);
+  }
 
   return (
     <div style={{ maxWidth: "400px", margin: "auto", fontFamily: "Arial" }}>
@@ -15,7 +18,7 @@ const ShowPassword = () => {
       />
 
       <button
-        onClick={() => setShow(!show)}
+        onClick={toggleShow}
         style={{ marginTop: "10px", padding: "5px 10px" }}
       >
         {show ? "Hide" : "Show"} Password

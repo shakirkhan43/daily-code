@@ -20,6 +20,13 @@ import Effect from './Hooks/Effect';
 
 import CountEffect from './Hooks/CountEffect';
 import Counter from './Hooks/Counter';
+import TernaryOperator from './Components/TernaryOperator';
+import BasicMap from './MapFunction/BasicMap';
+import UserData from './MapFunction/UserData';
+import SubjectList from './MapFunction/SubjectList';
+import StyledUserList from './MapFunction/StyledUserList';
+import FormBuilder from './MapFunction/FormBuilder';
+
 
 function App() {
 
@@ -47,9 +54,21 @@ function App() {
 
   return (
     <>
+
+    {/* map  */}
+
+    {/* <BasicMap /> */}
+    {/* <UserData /> */}
+    {/* <SubjectList /> */}
+    {/* <StyledUserList /> */}
+    <FormBuilder />
+
+
+
+    {/* <TernaryOperator /> */}
     {/* <Effect /> */}
     {/* <CountEffect /> */}
-    <Counter />
+    {/* <Counter /> */}
     {/* <DarkLight /> */}
     {/* <SimpleForm /> */}
     {/* <MultiInputForm /> */}
