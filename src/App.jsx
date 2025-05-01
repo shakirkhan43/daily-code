@@ -19,13 +19,19 @@ import Effect from './Hooks/Effect';
 // import Product from './Components/Product';
 
 import CountEffect from './Hooks/CountEffect';
-import Counter from './Hooks/Counter';
+import Counter from './Components/Counter';
 import TernaryOperator from './Components/TernaryOperator';
 import BasicMap from './MapFunction/BasicMap';
 import UserData from './MapFunction/UserData';
 import SubjectList from './MapFunction/SubjectList';
 import StyledUserList from './MapFunction/StyledUserList';
 import FormBuilder from './MapFunction/FormBuilder';
+import ProductList from './MapFunction/ProductList';
+import PhotoGallery from './MapFunction/PhotoGallery';
+import RealProduct from './MapFunction/RealProduct';
+import MyJson from './MapFunction/MyJson';
+import NewJson from './MapFunction/NewJson';
+import DataUser from './MapFunction/DataUser';
 
 
 function App() {
@@ -55,6 +61,7 @@ function App() {
   return (
     <>
 
+   <Counter />
     {/* map  */}
 
     {/* <BasicMap /> */}
@@ -62,16 +69,24 @@ function App() {
     {/* <SubjectList /> */}
     {/* <StyledUserList /> */}
     {/* <FormBuilder /> */}
+     
+     {/* <NewJson /> */}
+     {/* <DataUser /> */}
+     {/* <MyJson /> */}
+    {/* <ProductList /> */}
+    {/* <PhotoGallery /> */}
+    {/* <RealProduct /> */}
 
 
 
+    
     {/* <TernaryOperator /> */}
     {/* <Effect /> */}
     {/* <CountEffect /> */}
     {/* <Counter /> */}
     {/* <DarkLight /> */}
     {/* <SimpleForm /> */}
-    <MultiInputForm />
+    {/* <MultiInputForm /> */}
   {/* <StudentProfile /> */}
   {/* <ShowPassword /> */}
   {/* <ShowMore /> */}

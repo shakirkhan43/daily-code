@@ -1,0 +1,93 @@
+/* Main container styling */
+.container {
+    padding: 20px;
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f7fb;
+    min-height: 100vh;
+    display: flex;
+    flex-wrap: wrap; /* Allows wrapping to next line */
+    justify-content: center; /* Centers items horizontally */
+  }
+  
+  /* Heading styling */
+  h1 {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 30px;
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+  }
+  
+  /* Card Styling */
+  .card {
+    background-color: #fff;
+    padding: 20px;
+    margin: 15px;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 280px; /* Set width to fit 3 cards per row */
+    transition: all 0.3s ease-in-out;
+  }
+  
+  /* Hover effect for the card */
+  .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* User Name */
+  .card h2 {
+    font-size: 24px;
+    color: #2c3e50;
+    margin-bottom: 10px;
+    font-weight: 600;
+  }
+  
+  /* Paragraphs styling */
+  .card p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 8px;
+  }
+  
+  /* Strong text */
+  .card p strong {
+    color: #2c3e50;
+    font-weight: 600;
+  }
+  
+  /* List styling */
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  ul li {
+    font-size: 14px;
+    color: #777;
+    margin: 5px 0;
+    padding-left: 20px;
+    position: relative;
+  }
+  
+  ul li::before {
+    content: '•';
+    position: absolute;
+    left: 0;
+    color: #2c3e50;
+  }
+  
+  /* Make sure cards are responsive and wrap on smaller screens */
+  @media screen and (max-width: 900px) {
+    .card {
+      width: 45%; /* 2 cards per row on medium screens */
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    .card {
+      width: 100%; /* 1 card per row on small screens */
+    }
+  }
+  

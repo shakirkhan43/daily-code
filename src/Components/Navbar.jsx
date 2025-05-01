@@ -12,4 +12,4 @@ const Navbar = ({color}) => {
   )
 }
 
-export default Navbar
+export default Navbar;

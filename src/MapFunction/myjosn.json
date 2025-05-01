@@ -1,0 +1,17 @@
+[
+    {
+        "id": 1,
+       "image": "./image/virat kohli.avif"
+
+    },
+    {
+       "id": 2,
+        "name" : "Rohit Sharma",
+        "image" : "https://images.indianexpress.com/2024/07/Rohit-Sharma.jpg"
+    },
+    {
+        "id": 3,
+        "name": "KL Rahul",
+        "image": "https://documents.iplt20.com/ipl/IPLHeadshot2025/19.png"
+    }
+]
