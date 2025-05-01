@@ -61,7 +61,7 @@ function App() {
     {/* <UserData /> */}
     {/* <SubjectList /> */}
     {/* <StyledUserList /> */}
-    <FormBuilder />
+    {/* <FormBuilder /> */}
 
 
 
@@ -71,7 +71,7 @@ function App() {
     {/* <Counter /> */}
     {/* <DarkLight /> */}
     {/* <SimpleForm /> */}
-    {/* <MultiInputForm /> */}
+    <MultiInputForm />
   {/* <StudentProfile /> */}
   {/* <ShowPassword /> */}
   {/* <ShowMore /> */}

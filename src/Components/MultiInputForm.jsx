@@ -23,6 +23,9 @@ function MultiInputForm() {
     console.log(e.target);
     
     alert(`Name: ${formData.name}\nEmail: ${formData.email}`);
+    console.log(formData.name);
+    console.log(formData.email);
+    
 
   };
 
