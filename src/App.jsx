@@ -32,6 +32,9 @@ import RealProduct from './MapFunction/RealProduct';
 import MyJson from './MapFunction/MyJson';
 import NewJson from './MapFunction/NewJson';
 import DataUser from './MapFunction/DataUser';
+import FilterExample from './Filter/FilterExample';
+import ProductFilter from './Filter/ProductFilter';
+import SearchProduct from './Filter/SearchProduct';
 
 
 function App() {
@@ -61,7 +64,9 @@ function App() {
   return (
     <>
 
-   <Counter />
+   {/* <Counter /> */}
+
+
     {/* map  */}
 
     {/* <BasicMap /> */}
@@ -76,6 +81,11 @@ function App() {
     {/* <ProductList /> */}
     {/* <PhotoGallery /> */}
     {/* <RealProduct /> */}
+
+    {/* Filter  */}
+    {/* <FilterExample /> */}
+    {/* <ProductFilter /> */}
+    <SearchProduct />
 
 
 
