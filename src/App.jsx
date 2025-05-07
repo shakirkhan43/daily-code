@@ -35,6 +35,9 @@ import DataUser from './MapFunction/DataUser';
 import FilterExample from './Filter/FilterExample';
 import ProductFilter from './Filter/ProductFilter';
 import SearchProduct from './Filter/SearchProduct';
+import AddToCart from './Filter/AddToCart';
+import Navbar from './Components/Navbar';
+import FilterNavbar from './Filter/FilterNavbar';
 
 
 function App() {
@@ -85,7 +88,7 @@ function App() {
     {/* Filter  */}
     {/* <FilterExample /> */}
     {/* <ProductFilter /> */}
-    <SearchProduct />
+    <AddToCart />
 
 
 
