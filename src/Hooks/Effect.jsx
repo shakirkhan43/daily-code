@@ -1,5 +1,4 @@
 import {  useEffect, useState } from "react";
-import "tailwindcss/index.css";
 function Effect(){
  
     const [date, setDate] = useState(0);

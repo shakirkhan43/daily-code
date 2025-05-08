@@ -1,6 +1,5 @@
 import { useState } from 'react'
-import './App.css'
-import 'tailwindcss/index.css';
+// import './App.css'
 import StudentProfile from './Components/StudentProfile';
 import SimpleForm from './Components/SimpleForm';
 import MultiInputForm from './Components/MultiInputForm';
@@ -38,6 +37,7 @@ import SearchProduct from './Filter/SearchProduct';
 import AddToCart from './Filter/AddToCart';
 import Navbar from './Components/Navbar';
 import FilterNavbar from './Filter/FilterNavbar';
+import ListProduct from './Hooks/ListProduct';
 
 
 function App() {
@@ -88,7 +88,7 @@ function App() {
     {/* Filter  */}
     {/* <FilterExample /> */}
     {/* <ProductFilter /> */}
-    <AddToCart />
+    {/* <AddToCart /> */}
 
 
 
@@ -109,6 +109,8 @@ function App() {
   {/* <Counter /> */}
   {/* <PasswordAllow /> */}
   {/* <UseEffect /> */}
+  <ListProduct />
+ 
     <div className="">
 
       {/* <h1 className={`${a ? "text-white-500 border-2 border-red-500 py-25" : "text-green-500"}`}>{a ? "Hello" : "Hey"}</h1> */}

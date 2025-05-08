@@ -1,6 +1,5 @@
 
 import React, { useState } from 'react'
-import 'tailwindcss/index.css';
 const TernaryOperator = () => {
 
   const [isLogin , setIsLogin] =  useState(false);
