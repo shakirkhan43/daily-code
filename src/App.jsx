@@ -38,6 +38,13 @@ import AddToCart from './Filter/AddToCart';
 import Navbar from './Components/Navbar';
 import FilterNavbar from './Filter/FilterNavbar';
 import ListProduct from './Hooks/ListProduct';
+import MyComponent from './API/MyComponent';
+import PromiseMethod from './API/PromiseMethod';
+import OrderBurger from './API/orderBurger';
+import AsincAwait from './API/AsyncAwait';
+import FetchData from './API/FetchData';
+import WrongApi from './API/WrongApi';
+import WriteApi from './API/WriteApi';
 
 
 function App() {
@@ -109,7 +116,17 @@ function App() {
   {/* <Counter /> */}
   {/* <PasswordAllow /> */}
   {/* <UseEffect /> */}
-  <ListProduct />
+  {/* <ListProduct /> */}
+  {/* <MyComponent /> */}
+
+        {/* Api  */}
+
+        {/* <WrongApi /> */}
+        <WriteApi />
+        {/* <PromiseMethod /> */}
+        {/* <OrderBurger /> */}
+        {/* <AsincAwait /> */}
+        {/* <FetchData /> */}
  
     <div className="">
 
