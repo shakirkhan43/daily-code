@@ -45,6 +45,11 @@ import AsincAwait from './API/AsyncAwait';
 import FetchData from './API/FetchData';
 import WrongApi from './API/WrongApi';
 import WriteApi from './API/WriteApi';
+import ProductList1 from './API/ProductList1';
+import PostApiExample from './API/PostApiExample';
+import FormPostAPI from './API/FormPostAPI';
+import ApiForm from './API/ApiForm';
+import EasyFrom from './API/EasyForm';
 
 
 function App() {
@@ -98,7 +103,7 @@ function App() {
     {/* <AddToCart /> */}
 
 
-
+    {/* <SearchProduct /> */}
     
     {/* <TernaryOperator /> */}
     {/* <Effect /> */}
@@ -122,11 +127,18 @@ function App() {
         {/* Api  */}
 
         {/* <WrongApi /> */}
-        <WriteApi />
+        {/* <WriteApi /> */}
         {/* <PromiseMethod /> */}
         {/* <OrderBurger /> */}
         {/* <AsincAwait /> */}
         {/* <FetchData /> */}
+
+        {/* <ApiForm /> */}
+        {/* <EasyFrom /> */}
+        {/* <ProductList1 /> */}
+        {/* <PostApiExample /> */}
+        <FormPostAPI />
+        
  
     <div className="">
 
