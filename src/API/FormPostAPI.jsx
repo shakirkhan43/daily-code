@@ -23,7 +23,7 @@ function FormPostAPI() {
     e.preventDefault(); // form reload na ho
 
     try {
-      const response = await fetch("https://jsonplaceholder.typicode.com/posts", {
+      const response = await fetch("http://localhost:4000/user", {
         method: "POST", // 🔁 POST request bhej rahe
         headers: {
           "Content-Type": "application/json", // server ko bataya ki hum JSON bhej rahe
