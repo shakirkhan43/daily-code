@@ -1,14 +1,38 @@
 [
   {
-    "name": "Aliya jii",
-    "email": "aaliya@example.com",
-    "phone": "9999999999",
-    "city": "Indore"
+    "name": "Shakir khan",
+    "email": "shakir@example.com",
+    "phone": "9171308643",
+    "city": "Tanodiya"
   },
   {
-    "name": "Shakir jii",
-    "email": "Shakir@example.com",
-    "phone": "9999999999",
-    "city": "Indore"
+    "name": "Rohit kumar",
+    "email": "rohit@example.com",
+    "phone": "7418529630",
+    "city": "Kolkata"
+  },
+  {
+    "name": "Zahid patel",
+    "email": "Zahid@example.com",
+    "phone": "99999999999",
+    "city": "Tanodiya"
+  },
+  {
+    "name": "Akash patil",
+    "email": "akashpatil@example.com",
+    "phone": 98765432000,
+    "city": "Bombay"
+  },
+  {
+    "name": "Akash patil",
+    "email": "aakash@gmial.com",
+    "phone": 98765432000,
+    "city": "Bombay"
+  },
+  {
+    "name": "Pranshu Singh",
+    "email": "pranshudingh@gmial.com",
+    "phone": 19999999999,
+    "city": "Bobmy"
   }
 ]

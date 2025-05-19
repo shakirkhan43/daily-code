@@ -50,6 +50,8 @@ import PostApiExample from './API/PostApiExample';
 import FormPostAPI from './API/FormPostAPI';
 import ApiForm from './API/ApiForm';
 import EasyFrom from './API/EasyForm';
+import UpdateProduct from './API/UpdateProduct';
+import UpdateUserForm from './API/UpdateUserForm';
 
 
 function App() {
@@ -137,7 +139,9 @@ function App() {
         {/* <EasyFrom /> */}
         {/* <ProductList1 /> */}
         {/* <PostApiExample /> */}
-        <FormPostAPI />
+        {/* <FormPostAPI /> */}
+        {/* <UpdateProduct /> */}
+        <UpdateUserForm />
         
  
     <div className="">
