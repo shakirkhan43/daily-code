@@ -94,6 +94,142 @@
 
 // put code index.js 
 
+// // const express = require("express");
+// // 📦 Express framework import kiya (server banane ke liye)
+// const express = require("express");
+
+// // 📁 File system module import kiya (file read/write ke liye)
+// const fs = require("fs");
+
+// // 📂 Path module import kiya (file ka exact path banane ke liye cross-platform tarike se)
+// const path = require("path");
+
+// // 🚀 Express app initialize kiya
+// const app = express();
+
+// // 🔢 Port define kiya (yahan local server 4000 pe chalega)
+// const PORT = 4000;
+
+// // 🧠 Middleware: Ye line JSON body ko automatically parse karegi (req.body use karne ke liye zaroori)
+// app.use(express.json());
+
+// // 📁 JSON file ka path banaya (isi file me user data store hoga)
+// const filePath = path.join(__dirname, "./data.json");
+
+// // ==============================
+// // 📥 Function: JSON file se data read karna
+// // ==============================
+// const loadUsersFromFile = () => {
+//   try {
+//     // Agar file exist karti hai to
+//     if (fs.existsSync(filePath)) {
+//       // File ka data read karo
+//       const data = fs.readFileSync(filePath, "utf8");
+//       // Agar file empty nahi hai to JSON parse karo, warna empty array return karo
+//       return data ? JSON.parse(data) : [];
+//     } else {
+//       // Agar file nahi mili to empty array return karo
+//       return [];
+//     }
+//   } catch (err) {
+//     console.error("Read Error:", err);
+//     return [];
+//   }
+// };
+
+// // ==============================
+// // 💾 Function: JSON file me data save karna
+// // ==============================
+// const saveUsersToFile = (users) => {
+//   try {
+//     // Array ko JSON me convert karke file me likh do
+//     fs.writeFileSync(filePath, JSON.stringify(users, null, 2));
+//   } catch (err) {
+//     console.error("Write Error:", err);
+//   }
+// };
+
+// // ==============================
+// // ✅ POST API: Naya user add karne ke liye
+// // ==============================
+// app.post("/user", (req, res) => {
+//   // Client se aaya hua data destructure karo
+//   const { name, email, phone, city } = req.body;
+
+//   // New user object banao
+//   const newUser = { name, email, phone, city };
+
+//   // Pehle se file me jo users hai unhe load karo
+//   const users = loadUsersFromFile();
+
+//   // Optional check: Agar email already exist karta hai to error return karo
+//   const isExist = users.some((user) => user.email === email);
+//   if (isExist) {
+//     return res.status(400).json({ message: "Email already exists" });
+//   }
+
+//   // Naye user ko list me add karo
+//   users.push(newUser);
+
+//   // File me updated user list save karo
+//   saveUsersToFile(users);
+
+//   // Success response bhejo
+//   res.status(201).json({ message: "User added", user: newUser });
+// });
+
+// // ==============================
+// // ✅ PUT API: Email ke base par user update karna
+// // ==============================
+// app.put("/user/:email", (req, res) => {
+//   // URL se email nikalo
+//   const email = req.params.email;
+
+//   // Body se updated fields lo
+//   const updatedData = req.body;
+
+//   // File se user list load karo
+//   let users = loadUsersFromFile();
+
+//   // Email ke base par user ka index dhoondo
+//   const index = users.findIndex((user) => user.email === email);
+
+//   // Agar user nahi mila to error bhejo
+//   if (index === -1) {
+//     return res.status(404).json({ message: "User not found" });
+//   }
+
+//   // Jo fields update hui hain sirf unhe update karo (purane data ko preserve karke)
+//   users[index] = { ...users[index], ...updatedData };
+
+//   // Updated data file me save karo
+//   saveUsersToFile(users);
+
+//   // Success response bhejo
+//   res.json({ message: "User updated", user: users[index] });
+// });
+
+// // ==============================
+// // ✅ GET API: Sare users fetch karne ke liye
+// // ==============================
+// // app.get("/user", (req, res) => {
+// //   // File se user data load karo
+// //   const users = loadUsersFromFile();
+
+// //   // User list client ko bhejo
+// //   res.json(users);
+// // });
+
+// // ==============================
+// // 🟢 Server Start kar do
+// // ==============================
+// app.listen(PORT, () => {
+//   console.log(`Server running at http://localhost:${PORT}`);
+// });
+
+
+// Delete Api Start 
+
 // const express = require("express");
 // 📦 Express framework import kiya (server banane ke liye)
 const express = require("express");
@@ -104,12 +240,15 @@ const fs = require("fs");
 // 📂 Path module import kiya (file ka exact path banane ke liye cross-platform tarike se)
 const path = require("path");
 
+const cors = require("cors"); // ✅ Step 1: CORS import karo
+
 // 🚀 Express app initialize kiya
 const app = express();
 
 // 🔢 Port define kiya (yahan local server 4000 pe chalega)
 const PORT = 4000;
 
+app.use(cors()); // ✅ Step 2: CORS enable karo (ye sabse upar rakho)
 // 🧠 Middleware: Ye line JSON body ko automatically parse karegi (req.body use karne ke liye zaroori)
 app.use(express.json());
 
@@ -153,28 +292,17 @@ const saveUsersToFile = (users) => {
 // ✅ POST API: Naya user add karne ke liye
 // ==============================
 app.post("/user", (req, res) => {
-  // Client se aaya hua data destructure karo
   const { name, email, phone, city } = req.body;
-
-  // New user object banao
   const newUser = { name, email, phone, city };
-
-  // Pehle se file me jo users hai unhe load karo
   const users = loadUsersFromFile();
 
-  // Optional check: Agar email already exist karta hai to error return karo
   const isExist = users.some((user) => user.email === email);
   if (isExist) {
     return res.status(400).json({ message: "Email already exists" });
   }
 
-  // Naye user ko list me add karo
   users.push(newUser);
-
-  // File me updated user list save karo
   saveUsersToFile(users);
-
-  // Success response bhejo
   res.status(201).json({ message: "User added", user: newUser });
 });
 
@@ -182,43 +310,45 @@ app.post("/user", (req, res) => {
 // ✅ PUT API: Email ke base par user update karna
 // ==============================
 app.put("/user/:email", (req, res) => {
-  // URL se email nikalo
   const email = req.params.email;
-
-  // Body se updated fields lo
   const updatedData = req.body;
-
-  // File se user list load karo
   let users = loadUsersFromFile();
-
-  // Email ke base par user ka index dhoondo
   const index = users.findIndex((user) => user.email === email);
 
-  // Agar user nahi mila to error bhejo
   if (index === -1) {
     return res.status(404).json({ message: "User not found" });
   }
 
-  // Jo fields update hui hain sirf unhe update karo (purane data ko preserve karke)
   users[index] = { ...users[index], ...updatedData };
-
-  // Updated data file me save karo
   saveUsersToFile(users);
-
-  // Success response bhejo
   res.json({ message: "User updated", user: users[index] });
+});
+
+// ==============================
+// ✅ DELETE API: Email ke base par user delete karna
+// ==============================
+app.delete("/user/:email", (req, res) => {
+  const email = req.params.email;
+  const users = loadUsersFromFile();
+
+  const index = users.findIndex((user) => user.email === email);
+  if (index === -1) {
+    return res.status(404).json({ message: "User not found" });
+  }
+
+  const updatedUsers = users.filter((user) => user.email !== email);
+  saveUsersToFile(updatedUsers);
+
+  res.json({ message: `User with email ${email} deleted successfully.` });
 });
 
 // ==============================
 // ✅ GET API: Sare users fetch karne ke liye
 // ==============================
-// app.get("/user", (req, res) => {
-//   // File se user data load karo
-//   const users = loadUsersFromFile();
-
-//   // User list client ko bhejo
-//   res.json(users);
-// });
+app.get("/user", (req, res) => {
+  const users = loadUsersFromFile();
+  res.json(users);
+});
 
 // ==============================
 // 🟢 Server Start kar do
@@ -226,6 +356,9 @@ app.put("/user/:email", (req, res) => {
 app.listen(PORT, () => {
   console.log(`Server running at http://localhost:${PORT}`);
 });
+
+
+// Delete Api end
 
 
 

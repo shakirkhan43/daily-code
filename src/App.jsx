@@ -54,6 +54,10 @@ import UpdateProduct from './API/UpdateProduct';
 import UpdateUserForm from './API/UpdateUserForm';
 
 
+import PutFormUi from './API/PutFormUi';
+import PostFormUi from './API/GetFormUi';
+
+
 function App() {
 
   // const [a , b ] = useState(0);
@@ -141,8 +145,9 @@ function App() {
         {/* <PostApiExample /> */}
         {/* <FormPostAPI /> */}
         {/* <UpdateProduct /> */}
-        <UpdateUserForm />
-        
+        {/* <UpdateUserForm /> */}
+         {/* <PostFormUi />      */}
+        <PutFormUi />
  
     <div className="">
 

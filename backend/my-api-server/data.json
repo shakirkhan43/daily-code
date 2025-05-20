@@ -1,38 +1,56 @@
 [
   {
-    "name": "Shakir khan",
+    "name": "Shakir khan multani",
     "email": "shakir@example.com",
     "phone": "9171308643",
     "city": "Tanodiya"
   },
   {
-    "name": "Rohit kumar",
-    "email": "rohit@example.com",
-    "phone": "7418529630",
+    "name": "akki",
+    "email": "akki@example.com",
+    "phone": "7067112117",
+    "city": "Ujjain"
+  },
+  {
+    "name": "Rahul Kumar",
+    "email": "rahulkumar@example.com",
+    "phone": "1010101010",
     "city": "Kolkata"
   },
   {
-    "name": "Zahid patel",
-    "email": "Zahid@example.com",
-    "phone": "99999999999",
-    "city": "Tanodiya"
+    "name": "shakir khan",
+    "email": "shakirkhan7601@gmail.com",
+    "phone": "9171308643",
+    "city": "Indore"
   },
   {
-    "name": "Akash patil",
-    "email": "akashpatil@example.com",
-    "phone": 98765432000,
-    "city": "Bombay"
+    "name": "Chirag Jain",
+    "email": "letskillify@gmail.com",
+    "phone": "85858585858",
+    "city": "Indore"
   },
   {
-    "name": "Akash patil",
-    "email": "aakash@gmial.com",
-    "phone": 98765432000,
-    "city": "Bombay"
+    "name": "Sonam Gupta",
+    "email": "sonamgupta@gmail.com",
+    "phone": "789789789",
+    "city": "Bevfa city"
   },
   {
-    "name": "Pranshu Singh",
-    "email": "pranshudingh@gmial.com",
-    "phone": 19999999999,
-    "city": "Bobmy"
+    "name": "Abhay Kumar",
+    "email": "abhaykumar@example.com",
+    "phone": "1010101010",
+    "city": "Delhi"
+  },
+  {
+    "name": "shakir khan",
+    "email": "shakirkhan760112@gmail.com",
+    "phone": "9171308643",
+    "city": "Indore"
+  },
+  {
+    "name": "pranshu singh ",
+    "email": "pranshu@gmail.com",
+    "phone": "12346678",
+    "city": "jaipur"
   }
 ]
