@@ -56,30 +56,13 @@ import UpdateUserForm from './API/UpdateUserForm';
 
 import PutFormUi from './API/PutFormUi';
 import PostFormUi from './API/GetFormUi';
+import UserFrom from './API/Post Api/UserForm';
+import UserList from './API/Post Api/UserList';
 
 
 function App() {
 
-  // const [a , b ] = useState(0);
-  // const [a , b ] = useState(true);
 
-  // const [count, setCount] = useState(21);
-  // const [a , b] =  useState(true);
-
-
-
-//  const handleClick = () => {
-//   setCount(count + 1)
-//  }
-
-
-// const Inc = () => {
-//   b(a + 1)
-// }
-
-// const Dec = () => {
-//   b(a - 1)
-// }
 
 
   return (
@@ -147,24 +130,12 @@ function App() {
         {/* <UpdateProduct /> */}
         {/* <UpdateUserForm /> */}
          {/* <PostFormUi />      */}
-        <PutFormUi />
+        {/* <PutFormUi /> */}
+
+        <UserFrom />
+        <UserList />
  
-    <div className="">
-
-      {/* <h1 className={`${a ? "text-white-500 border-2 border-red-500 py-25" : "text-green-500"}`}>{a ? "Hello" : "Hey"}</h1> */}
-
-      {/* <h1>{a}</h1> */}
-      {/* <button className='px-3 py-1 rounded mt-5 bg-green-500 cursor-pointer border-2 border-white-500' onClick={() => b(a + 1)}>Click</button> */}
-   {/* <div className='mx-5'>
-   <button className='mx-5 cursor-pointer' onClick={Inc}>Incriment</button>
-   <button className='mx-5 cursor-pointer' onClick={Dec}>Decriment</button> */}
-   </div>
-      {/* <h1 className={`${a ? "text-red-500" : "text-green-500"}`}>{a ? "Hello" : "Hey"}</h1> */}
-     {/* <Product  age = "25"  data = {{name : "Shakir khan" , age : "25"}} /> */}
-     {/* <h1>{count}</h1>
-     <button className='px-3 py-1 rounded mt-5 bg-green-500 cursor-pointer border-2 border-white-500' onClick={() => setCount(count + 1)}>Click</button> */}
-     {/* <button onClick={handleClick}  className='px-3 py-1 rounded mt-5 bg-green-500 cursor-pointer'>Click</button> */}
-     {/* <button onClick={() => setCount(25)} className='px-3 py-1 rounded mt-5 bg-green-500 cursor-pointer'>Click</button> */}
+   
     
     </>
   )

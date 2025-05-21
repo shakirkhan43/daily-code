@@ -52,5 +52,35 @@
     "email": "pranshu@gmail.com",
     "phone": "12346678",
     "city": "jaipur"
+  },
+  {
+    "name": "shakku khan",
+    "email": "shakkukhan0202@gmail.com",
+    "phone": "1111111111",
+    "city": "Indore"
+  },
+  {
+    "name": "Yuvraj singh",
+    "email": "yuvraj@gmail.com",
+    "phone": "7412589630",
+    "city": "indore"
+  },
+  {
+    "name": "Dhoni ",
+    "email": "Dhoni@gmail.com",
+    "phone": "01478963234567",
+    "city": "Jh"
+  },
+  {
+    "name": "asdf",
+    "email": "asdf",
+    "phone": "asdfadf",
+    "city": "adf"
+  },
+  {
+    "name": "Jayant ",
+    "email": "jayant@textgmail.com",
+    "phone": "1234567890",
+    "city": "Jaora"
   }
 ]
