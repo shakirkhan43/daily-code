@@ -58,6 +58,8 @@ import PutFormUi from './API/PutFormUi';
 import PostFormUi from './API/GetFormUi';
 import UserFrom from './API/Post Api/UserForm';
 import UserList from './API/Post Api/UserList';
+import UserPut from './API/Put & Delete Api/userPut';
+
 
 
 function App() {
@@ -132,8 +134,10 @@ function App() {
          {/* <PostFormUi />      */}
         {/* <PutFormUi /> */}
 
-        <UserFrom />
-        <UserList />
+        {/* <UserFrom /> */}
+        {/* <UserList /> */}
+        <UserPut />
+        
  
    
     

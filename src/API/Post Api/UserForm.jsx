@@ -84,7 +84,9 @@ function UserForm() {
     const [phone, setPhone] = useState("");
     const [city, setCity] = useState("");
 
-    const handleSubmit = async () => {
+    const handleSubmit = async (e) => {
+        e.preventDefault(); // Prevent default form submission
+        console.log(name, email, phone, city);
         try {
             const response = await axios.post("http://localhost:4000/user", {
                 name,
@@ -106,6 +108,7 @@ function UserForm() {
         <>
             <h1>Add New User</h1>
 
+            <form onSubmit={handleSubmit}>
             <input type="text" placeholder="Enter your name"
                 value={name}
                 onChange={(e) => setName(e.target.value)}
@@ -126,9 +129,13 @@ function UserForm() {
                 onChange={(e) => setCity(e.target.value)}
             /> <br /><br />
 
-            <button onClick={handleSubmit}>Submit</button>
+            <button>Submit</button>
+            </form>
         </>
     );
 }
 
 export default UserForm;
+
+
+

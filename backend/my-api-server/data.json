@@ -2,11 +2,11 @@
   {
     "name": "Shakir khan multani",
     "email": "shakir@example.com",
-    "phone": "9171308643",
-    "city": "Tanodiya"
+    "phone": "9171308625",
+    "city": "Indore"
   },
   {
-    "name": "akki",
+    "name": "Ankit Nagar nagar",
     "email": "akki@example.com",
     "phone": "7067112117",
     "city": "Ujjain"
@@ -69,18 +69,96 @@
     "name": "Dhoni ",
     "email": "Dhoni@gmail.com",
     "phone": "01478963234567",
-    "city": "Jh"
-  },
-  {
-    "name": "asdf",
-    "email": "asdf",
-    "phone": "asdfadf",
-    "city": "adf"
+    "city": "JharKhand"
   },
   {
     "name": "Jayant ",
     "email": "jayant@textgmail.com",
     "phone": "1234567890",
     "city": "Jaora"
+  },
+  {
+    "name": "Aadrsh singh",
+    "email": "abc123@gmail.com",
+    "phone": "1234567890",
+    "city": "UP"
+  },
+  {
+    "name": "shakir",
+    "email": "shakir@gmail.com",
+    "phone": "5432167890",
+    "city": "Indoere"
+  },
+  {
+    "name": "Ashif ",
+    "email": "ashif@gmail.com",
+    "phone": "1234567890",
+    "city": "Ujjain"
+  },
+  {
+    "name": "abcd",
+    "email": "abcd@gmail.com",
+    "phone": "00000000000",
+    "city": "ABCD"
+  },
+  {
+    "name": "Zahir ",
+    "email": "zahir@gmail.com",
+    "phone": "-098765432",
+    "city": "Indore"
+  },
+  {
+    "name": "fgvhbj",
+    "email": "fvgbhjk@gmail.com",
+    "phone": "tryguyi",
+    "city": "ertyguh"
+  },
+  {
+    "name": "asdf",
+    "email": "asdf@gmail.com",
+    "phone": "gvhbn",
+    "city": "hbk"
+  },
+  {
+    "name": "adfadf",
+    "email": "adf@gmail.com",
+    "phone": "asdfdadsfdsgga",
+    "city": "asdg"
+  },
+  {
+    "name": "asdfadfd",
+    "email": "adfd@gmial.com",
+    "phone": "asdfad",
+    "city": "fadfdf"
+  },
+  {
+    "name": "abcd",
+    "email": "abcd123@gmail.com",
+    "phone": "1234567890",
+    "city": "abc"
+  },
+  {
+    "name": "abcde",
+    "email": "abcde@gmail.com",
+    "phone": "234567890",
+    "city": "abcd"
+  },
+  {
+    "name": "abcde",
+    "email": "abcdef@gmail.com",
+    "phone": "234567890",
+    "city": "abcd"
+  },
+  {
+    "name": "bnc",
+    "email": "bnc@gmail.com",
+    "phone": "124b",
+    "city": "bnc"
+  },
+  {
+    "name": "xyza",
+    "email": "xyza@gmail.com",
+    "phone": "xyza",
+    "city": "xyza"
   }
 ]
