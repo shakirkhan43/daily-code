@@ -1,15 +1,9 @@
 [
   {
-    "name": "Ankit Nagar nagar",
-    "email": "akki@example.com",
-    "phone": "7067112117",
-    "city": "Ujjain"
-  },
-  {
     "name": "Rahul Kumar",
     "email": "rahulkumar@example.com",
     "phone": "1010101010",
-    "city": "Kolkata"
+    "city": "Indore"
   },
   {
     "name": "shakir khan",
@@ -154,5 +148,11 @@
     "email": "xyza@gmail.com",
     "phone": "xyza",
     "city": "xyza"
+  },
+  {
+    "name": "Arpit Kumar",
+    "email": "arpit@gmial.com",
+    "phone": 7418520239695,
+    "city": "Indore"
   }
 ]
