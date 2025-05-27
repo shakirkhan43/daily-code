@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 // import axios from "axios";
 
 function MyComponent() {
-    const [data, setData] = useState(null);
+    // const [data, setData] = useState(null);
   // const [error, setError] = useState(null);
 
   // console.log("data", data);
@@ -20,46 +20,46 @@ function MyComponent() {
   //     };
   //     console.log("data", data);
 
-  const apidata = () => {
+  // const apidata = () => {
      
-    fetch("https://dummyjson.com/products")
-        .then( (res) => {
-          return res.json();
-        })
-        .then ( (res) => {
-          return setData(res);
+  //   fetch("https://dummyjson.com/products")
+  //       .then( (res) => {
+  //         return res.json();
+  //       })
+  //       .then ( (res) => {
+  //         return setData(res);
 
-        })
+  //       })
         
         
         
-      }
-      console.log("data", data);
+  //     }
+  //     console.log("data", data);
   
-      useEffect(() => {
-        apidata();
-      } , [])
+  //     useEffect(() => {
+  //       apidata();
+  //     } , [])
 
   // Post
 
-  // const data = {
-  //   userId: 133,
-  //   title: "Deepak Singh",
-  //   category: "beauty",
-  //   price: 100,
-  //   description: "Deepak Singh",
-  // };
+  const data = {
+    userId: 133,
+    title: "Deepak Singh",
+    category: "beauty",
+    price: 100,
+    description: "Deepak Singh",
+  };
 
-  // const apidata = () => {
-  //   fetch("https://dummyjson.com/products/add", {
-  //     method: "POST",
-  //     headers: { "Content-Type": "application/json" },
-  //     body: JSON.stringify(data),
-  //   })
-  //     .then((res) => res.json())
-  //     .then((res) => console.log("..........", res))
-  //     .catch((err) => console.log(err));
-  // };
+  const apidata = () => {
+    fetch("https://dummyjson.com/products/add", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(data),
+    })
+      .then((res) => res.json())
+      .then((res) => console.log("..........", res))
+      .catch((err) => console.log(err));
+  };
 
   return (
     <div>
