@@ -2,9 +2,9 @@ import React from 'react';
 
 const FilterExample = () => {
   const users = [
-    { id: 1, name: 'John', age: 24 },
+    { id: 1, name: 'Azman', age: 24 },
     { id: 2, name: 'Jane', age: 17 },
-    { id: 3, name: 'Bob', age: 20 }
+    { id: 3, name: 'Bob', age: 19 }
   ];
 
   // const adultUsers = users.filter(user => user.age > 18);
